@@ -1,5 +1,6 @@
 # docker-python-django
-![alt text](./images/under-construction.png =287x257 "Under Construction")
+
+<img src="./images/under-construction.png" alt="Under Construction" width="287" height="257"/>
 
 A docker template for django projects
 
