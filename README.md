@@ -8,8 +8,8 @@ A docker template for django projects
 ## Installed Software
 
 1. Python 3.5.6
-2. Django 2.1
-3. Postgresql
+2. Django 2.1.3
+3. Postgresql 9.6.11
 
 ## Steps are done
 1. Create an image from Python 3.5
