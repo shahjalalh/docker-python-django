@@ -1,8 +1,9 @@
 # docker-python-django
 
-<img src="./images/under-construction.png" alt="Under Construction" width="287" height="257"/>
-
 A docker template for django projects
+
+<img src="./images/under-construction.png" alt="Under Construction" width="187" height="167"/>
+
 
 ## Installed Software
 
