@@ -1,6 +1,10 @@
 version: '3.1'
 services:
   web:
-    build: .
+    image: shahjalalh/python-django:0.1
+    container_name: python_django
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8000:8000"

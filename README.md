@@ -9,7 +9,7 @@ A docker template for django projects
 
 1. Python 3.5.6
 2. Django 2.1.3
-3. Postgresql 9.6.11
+3. Postgresql 9.6.11 (not included yet)
 
 ## Steps are done
 1. Create an image from Python 3.5
@@ -32,4 +32,7 @@ $ sudo docker run -it shahjalalh/python-django:0.1 bash
 
 or,
 $ sudo docker-compose up
+
+or, if want to rebuild
+$ docker-compose up --build
 ```
