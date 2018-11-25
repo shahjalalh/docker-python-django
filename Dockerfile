@@ -16,11 +16,8 @@ WORKDIR /usr/app
 # or, clone from git
 RUN git clone https://github.com/shahjalalh/sample_django_project_for_docker.git
 
-# change directory
-RUN cd sample_django_project_for_docker
-
 # Install the requirements
-RUN pip install -r requirements.txt
+RUN pip install -r sample_django_project_for_docker/requirements.txt
 
 # Default command
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "sample_django_project_for_docker/manage.py", "runserver", "0.0.0.0:8000"]

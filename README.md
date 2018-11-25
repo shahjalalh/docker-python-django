@@ -23,12 +23,12 @@ A docker template for django projects
 Commands:
 
 ```
-$ sudo docker build -t shahjalalh/python-django:0.1  .
+$ sudo docker build -t shahjalalh/python-django:0.1 .
 
-$ sudo docker run -p 8080:8080 shahjalalh/python-django
+$ sudo docker run -p 8000:8000 shahjalalh/python-django:0.1
 
 or,
-$ sudo docker run -it shahjalalh/python-django sh
+$ sudo docker run -it shahjalalh/python-django:0.1 bash
 
 or,
 $ sudo docker-compose up
