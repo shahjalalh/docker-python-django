@@ -36,3 +36,9 @@ $ sudo docker-compose up
 or, if want to rebuild
 $ docker-compose up --build
 ```
+
+Inter into the running docker container
+```
+$ sudo docker ps
+$ sudo docker exec -it <container-id> bash
+```

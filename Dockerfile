@@ -20,4 +20,5 @@ RUN git clone https://github.com/shahjalalh/sample_django_project_for_docker.git
 RUN pip install -r sample_django_project_for_docker/requirements.txt
 
 # Default command
+CMD ["python", "sample_django_project_for_docker/manage.py", "migrate", "--noprint"]
 CMD ["python", "sample_django_project_for_docker/manage.py", "runserver", "0.0.0.0:8000"]
