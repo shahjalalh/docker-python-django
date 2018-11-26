@@ -20,7 +20,7 @@ A docker template for django projects
 6. Run the web
 
 
-Commands:
+## Docker Commands:
 
 ```
 $ sudo docker build -t shahjalalh/python-django:0.1 .
@@ -37,7 +37,20 @@ or, if want to rebuild
 $ docker-compose up --build
 ```
 
-Inter into the running docker container
+## Creating superuser
+```
+$ sudo docker-compose run web python sample_django_project_for_docker/manage.py migrate
+$sudo docker-compose run web python sample_django_project_for_docker/manage.py createsuperuser
+```
+
+## Browsing program
+In the browser address bar
+```
+localhost:8000
+localhost:8000/admin
+```
+
+## Inter into the running docker container
 ```
 $ sudo docker ps
 $ sudo docker exec -it <container-id> bash
