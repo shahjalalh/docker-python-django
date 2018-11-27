@@ -2,9 +2,6 @@
 
 A docker template for django projects
 
-<img src="./images/under-construction.png" alt="Under Construction" width="187" height="167"/>
-
-
 ## Installed Software
 
 1. Python 3.5.6
@@ -16,24 +13,26 @@ A docker template for django projects
 2. Install git 
 3. Copy or pull code from git to the working directory
 4. Install all requirements.txt packages
-5. Install Postgresql and configure.
+5. Install PostgreSQL and configure.
 6. Run the web
 
 
 ## Docker Commands:
 
 ```
+# Docker build from Dockerfile
 $ sudo docker build -t shahjalalh/python-django:0.1 .
 
+# Docker run from the image
 $ sudo docker run -p 8000:8000 shahjalalh/python-django:0.1
 
-or,
+or, Docker run and enter into the bash
 $ sudo docker run -it shahjalalh/python-django:0.1 bash
 
-or,
+or, Build and run with docker compose
 $ sudo docker-compose up
 
-or, if want to rebuild
+or, rebuild from first build
 $ docker-compose up --build
 ```
 
