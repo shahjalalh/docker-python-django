@@ -1,7 +1,7 @@
 # Specify a base image
-# FROM python:3.5.6-jessie # 270MB+
-# FROM python:3.5.6-slim-jessie # 50MB+
-FROM python:3.5.6-slim-jessie
+# FROM python:3.5.6-stretch # 350MB+
+# FROM python:3.5.6-slim-stretch # 40MB+
+FROM python:3.5.6-slim-stretch
 
 # Install git
 RUN apt-get update && apt-get install -y git
@@ -20,4 +20,5 @@ RUN git clone https://github.com/shahjalalh/sample_django_project_for_docker.git
 RUN pip install -r sample_django_project_for_docker/requirements.txt
 
 # Default command
+CMD ["python", "sample_django_project_for_docker/manage.py", "migrate", "--noprint"]
 CMD ["python", "sample_django_project_for_docker/manage.py", "runserver", "0.0.0.0:8000"]

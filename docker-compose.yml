@@ -1,5 +1,11 @@
 version: '3.1'
 services:
+  db:
+    image: postgres:9.6.11
+    container_name: postgresql_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
   web:
     image: shahjalalh/python-django:0.1
     container_name: python_django
@@ -8,3 +14,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
+    depends_on:
+      - db
+volumes:
+  postgres_data:
