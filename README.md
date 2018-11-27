@@ -49,7 +49,7 @@ localhost:8000
 localhost:8000/admin
 ```
 
-## Inter into the running docker container
+## Enter into the running docker container
 ```
 $ sudo docker ps
 $ sudo docker exec -it <container-id> bash
