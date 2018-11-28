@@ -39,7 +39,7 @@ $ docker-compose up --build
 ## Creating superuser
 ```
 $ sudo docker-compose run web python sample_django_project_for_docker/manage.py migrate
-$sudo docker-compose run web python sample_django_project_for_docker/manage.py createsuperuser
+$ sudo docker-compose run web python sample_django_project_for_docker/manage.py createsuperuser
 ```
 
 ## Browsing program
